@@ -10,7 +10,6 @@ import {
   ChevronDown,
   FileIcon,
   GridIcon,
-  ListIcon,
   TableIcon,
   UserCircleIcon,
 } from "lucide-react";
