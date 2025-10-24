@@ -35,20 +35,14 @@ const navItems: INavItem[] = [
     path: "/profile",
   },
   {
-    icon: <ListIcon size={16} />,
-    name: "Forms",
-    children: [{ name: "Form Elements", path: "/form-elements" }],
-  },
-  {
     icon: <TableIcon size={16} />,
     name: "Tables",
-    children: [{ name: "Basic Tables", path: "/basic-tables" }],
+    children: [{ name: "Basic Table", path: "/table" }],
   },
   {
     icon: <FileIcon size={16} />,
     name: "Pages",
     children: [
-      { name: "Blank Page", path: "/blank" },
       { name: "404 Error", path: "/error-404" },
     ],
   },
@@ -150,7 +144,7 @@ function SubMenuItem({ item, isMini }: { item: INavItem; isMini: boolean }) {
         variant="ghost"
         className={cn(
           "text-sm no-underline text-sidebar-foreground font-medium",
-          "w-full px-3 py-2",
+          "w-full px-3 py-2 gap-4",
           { "bg-sidebar-accent text-sidebar-accent-foreground": isActive }
         )}
         onClick={() => setIsActive((p) => !p)}
